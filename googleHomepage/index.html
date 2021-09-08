@@ -1,0 +1,324 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Google Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>    
+        /* Style the nav */
+
+        body {
+            margin: 0px;
+        }
+
+        nav {
+          top: 0;
+          min-height: 1rem;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav .leftSideContainer {
+            display: flex;
+            justify-content: flex-start;
+            margin: 10px 0px 0px 8px;
+        }
+
+        nav .rightSideContainer {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 12px 0 auto;
+        }
+
+        nav .leftSideContainer .firstLink {
+            margin-right: 19px;
+            margin-left: 17px;
+        }
+
+        nav .leftSideContainer p {
+            color: #404040;
+        }
+
+        nav .rightSideContainer p {
+            color: rgb(19, 19, 19);
+        }
+
+        nav .leftSideContainer p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        nav .rightSideContainer .aLastLink {
+            margin-right: 15px;
+        }
+
+        nav .rightSideContainer .signInBtn {
+            display: flex;
+            align-items: center;
+            margin-left: 17px;
+            margin-right: 18px;
+        }
+
+        nav .rightSideContainer button {
+            border: 0;
+            border-radius: 1.5px;
+            padding: 7px 12px 8px 13px;
+            background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+            color: white;
+        }
+
+        nav .rightSideContainer button:hover {
+            filter: drop-shadow(0 .5px .5px #737373);
+        }
+
+        nav p {
+            font-size: 13px;
+        }
+
+        nav .rightSideContainer p:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        nav .rightSideContainer .appIcon {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav .rightSideContainer .appIcon i:hover {
+            cursor: pointer;
+            color: black;
+        }
+
+        nav i {
+            color: rgb(115,115,115);
+            margin: 0rem 0rem 0rem 18px;
+        }
+
+        body .centerContainer {
+          font-family: Arial, Helvetica, sans-serif;
+          padding-top: 9.1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        body .centerContainer .logo-thumbnail {
+            margin-bottom: 1.7rem;
+        }
+
+        body .centerContainer .borderForSearch {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid #DEE1E5;
+            border-radius: 30px;
+            padding: 0px 8px 0px 16px;
+            width: 35rem;
+            height: 45px;
+        }
+
+        body .centerContainer .borderForSearch i {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: #9AA0A5;
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        body .centerContainer .borderForSearch .searchBox {
+            flex-basis: 0%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            text-align: center;
+        }
+
+        body .centerContainer .borderForSearch .searchBox input {
+            width: 100%;
+            height: 2rem;
+            border: 0;
+        }
+
+        input:focus {
+        outline:none;
+    }
+
+        body .centerContainer .borderForSearch .micIconDiv {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .micImg {
+            height: 24px;
+            width: 24px;
+            background-size: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+            margin-left: 8px;
+            border: 0;
+            cursor: pointer;
+        }
+
+        body .centerContainer .searchButtons {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+
+        body .centerContainer .searchButtons button {
+            border: 0;
+            border-radius: 3px;
+            font-size: 14px;
+            padding: 10px 16px 10px 16px;
+            color: #5F6367;
+            background-color: #F3F3F3;
+        }
+
+        body .centerContainer .searchButtons button:hover {
+            border: 1;
+            border-color: #181818;
+            color: black;
+            cursor: pointer;
+        }
+        
+        .googleSearchBtn {
+            margin-right: 12px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        footer .footerContainer {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            font-size: 14px;
+            min-height: 40px;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #5F6367;
+            background-color: #F2F2F2;
+            border-top: 1px solid #E4E4E4;
+        }
+
+        footer .footerContainer .footerDivContainerLeft {
+            display: flex;
+        }
+
+        footer .footerContainer .footerDivContainerRight {
+            display: flex;
+        }
+
+        footer .footerContainer .footerDivContainerLeft .pElement {
+            margin: 0 0 0 30px;
+            cursor: pointer;
+        }
+
+        footer .footerContainer .footerDivContainerRight .pElementRight {
+            margin: 0 30px 0 0;
+            cursor: pointer;
+        }
+
+        footer .footerContainer p:hover {
+            text-decoration: underline;
+        }
+
+
+        </style>
+</head>
+
+<nav>
+        <div class="leftSideContainer">
+            <div class="firstLink">
+                <p>
+                About
+                </p>
+            </div>
+            <div>
+                <p>
+                Store
+                </p>
+            </div>
+        </div>
+        <div class="rightSideContainer">
+            <div class="aLastLink">
+                <p>
+                Gmail
+                </p>
+            </div>
+            <div>
+                <p>
+                Images
+                </p>
+            </div>
+            <div class="appIcon">
+                <i class="material-icons">apps</i>
+            </div>
+            <div class="signInBtn">
+                <button>
+                    <b>Sign In</b>
+                </button>
+            </div>
+        </div>
+</nav>
+
+<body>
+    <div class = "centerContainer">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+            alt="Google's Logo" 
+            class="logo-thumbnail">
+        <div class="borderForSearch">
+            <div>
+                <i class="material-icons">search</i>     
+            </div>
+            <div class="searchBox">
+                <input type="text">
+            </div>
+            <div class="micIconDiv">
+                <img src = "https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png"
+                class="micImg">
+            </div>
+        </div>
+        <div class="boarderForSearchSibling">
+        </div>
+        <div class="searchButtons">
+            <button class = "googleSearchBtn" >Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div class="footerContainer">
+        <div class="footerDivContainerLeft">
+            <p class="pElement">Advertising</p>
+            <p class="pElement">Business</p>
+            <p class="pElement">How Search Works</p>
+        </div>
+        <div class="footerDivContainerRight">
+        <p class="pElementRight">Privacy</p>
+        <p class="pElementRight">Terms</p>
+        <p class="pElementRight">Settings</p>
+        </div>
+    </div>
+
+</footer>
+</html>
