@@ -1,0 +1,9 @@
+.topContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.topContainer .items {
+    margin: 10px;
+}
