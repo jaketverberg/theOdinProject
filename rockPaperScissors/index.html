@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+    @import url('style.css');
+</style>
     <title>Rock Paper Scissors Game</title>
 </head>
 <body>
@@ -14,30 +16,28 @@
         <h1 class="items">Paper</h1>
         <h1 class="items">Scissors</h1>
     </topContainer>
-    <secondTopContainer>
-        <h2>It takes 5 wins to save humanity</h2>
-        <h3>We cannot loose.</h3>
+    <secondTopContainer class="Containers">
+        <h3>It takes 5 wins to save humanity</h3>
+        <h4>We cannot loose.</h4>
     </secondTopContainer>
 
-    <WeaponChoice>
+    <WeaponChoice class="Containers">
         <h2>Choose your weapon:</h2>
 
         <rpsChoice>
-            <rock>img of rock</rock>
-            <paper>img of paper</paper>
-            <scissor>img of scissors</scissor>
+            <img src="https://cdn-icons-png.flaticon.com/512/4405/4405437.png" alt="Rock" id="rock">
+            <img src = "https://cdn-icons-png.flaticon.com/512/3979/3979284.png" alt="Paper" id="paper">
+            <img src = "https://cdn-icons-png.flaticon.com/512/760/760911.png" alt="Scissors" id="scissors">
         </rpsChoice>
     </WeaponChoice>
 
-    <h2>Score:</h2>
-    <scoreTextContainer>
+    <h2 class="Containers">Score:</h2>
+    <scoreTextContainer class="scoreContainers">
         <h3>You</h3>
         <h3>Them</h3>
     </scoreTextContainer>
 
-    <Scores>
-        <p>USER SCORE HERE</p>
-        <p>COMP SCORE HERE</p>
+    <Scores class="scoreContainers">
     </Scores>
 </body>
 </html>
