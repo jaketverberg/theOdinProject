@@ -6,20 +6,22 @@ const subtract = function() {
 	return arguments[0] - arguments[1]
 };
 
-const sum = function() {
-	const argu = [...arguments];
+const sum = function(arr) {
 
-  let answer = argu.reduce((previousValue, currentValue) => {
+  if (arr.length == 0) {
+    return 0;
+  }
+
+  let answer = arr.reduce((previousValue, currentValue) => {
     return previousValue + currentValue
     });
   
   return answer;
   };
 
-const multiply = function() {
-	const argu = [...arguments];
+const multiply = function(arr) {
   
-  let answer = argu.reduce((previousValue, currentValue) => {
+  let answer = arr.reduce((previousValue, currentValue) => {
     return previousValue * currentValue
     });
   
